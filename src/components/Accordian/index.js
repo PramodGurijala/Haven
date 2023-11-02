@@ -17,7 +17,7 @@ export default function AccordionComp({ name, content }) {
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
-        sx={{
+        style={{
           border: "0px",
           borderRadius: "0",
           boxShadow: "none",
