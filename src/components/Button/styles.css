@@ -1,0 +1,46 @@
+.custom-button {
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Helvetica;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #fff;
+  background: none;
+}
+
+.button-container button:disabled {
+  color: #000;
+  background-color: #c8c8c8;
+  border: 2px solid #c8c8c8;
+}
+
+/* Button Colors */
+
+.white {
+  /* background-color: #0d4f57;
+  border: solid #0d4f57 2px; */
+  /* background: none; */
+}
+
+.orange {
+  background-color: #FF6102;
+  border-color:#FF6102;
+  color: #fff;
+}
+
+.borderLess {
+}
+
+/* phone */
+@media (max-width: 450px) {
+}
+
+/* tablets */
+@media (min-width: 450px) and (max-width: 950px) {
+}
+
+/* desktops */
+@media (min-width: 950px) {
+}

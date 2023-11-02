@@ -1,0 +1,32 @@
+.footer-box2 {
+  width: 12.5%;
+}
+
+.footer-box1 {
+  width: 20%;
+}
+
+.smartupsLogo-footer{
+    width: 90%;
+}
+.footer-logoIcon{
+    width: 7%;
+}
+
+@media (max-width: 804px) {
+  .footer-boxer {
+    flex-direction: column;
+  }
+  .footer-box2 {
+    width: 100%;
+  }
+  .smartupsLogo-footer{
+    width: 30%;
+}
+  .footer-box1 {
+    width: 100%;
+  }
+  .footer-logoIcon{
+    width: 17%;
+}
+}
