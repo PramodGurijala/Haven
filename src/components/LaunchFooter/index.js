@@ -6,10 +6,12 @@ import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import { footerData } from "./footerData";
+import AccordionComp from "../Accordian";
 
 export default function LaunchFooter() {
   const navigate = useNavigate();
-  const { isMobile, isLaptop, isTablet } = ScreenSize();
+  const { isMobile, isLaptop, isTablet, ScreenWidth } = ScreenSize();
+  // console.log("####", ScreenWidth);
   return (
     <Grid className="LaunchFooter">
       <Grid
@@ -36,7 +38,7 @@ export default function LaunchFooter() {
           <Typography pt={2} pb={2} color="#1A2644">
             Thinking outside the box so we can help you remain compliant.
           </Typography>
-          <Grid>
+          <Grid mb={3} display="flex">
             <img alt="" src={images.darkfacebook} width="45px" />
             <img
               alt=""
@@ -49,26 +51,35 @@ export default function LaunchFooter() {
         </Grid>
         {footerData?.map((item, i) => {
           return (
-            <Grid
-              pt={5}
-              key={i}
-              // xs={1.5}
-              // border="1px solid red"
-              className="footer-box2"
-            >
-              <Typography color="#1a2644" pb={3} fontWeight="700">
-                {item.name}
-              </Typography>
-              <text
-                style={{
-                  whiteSpace: "pre-line",
-                  color: "#1a2644",
-                  lineHeight: "25px",
-                }}
-              >
-                {item.options.replace(/,/g, "\n")}
-              </text>
-            </Grid>
+            <>
+              {ScreenWidth > 804 ? (
+                <>
+                  <Grid
+                    pt={5}
+                    key={i}
+                    // border="1px solid red"
+                    className="footer-box2"
+                  >
+                    <Typography color="#1a2644" pb={1} fontWeight="700">
+                      {item.name}
+                    </Typography>
+                    <text
+                      style={{
+                        whiteSpace: "pre",
+                        color: "#1a2644",
+                        lineHeight: "25px",
+                      }}
+                    >
+                      {item.options.replace(/,/g, "\n")}
+                    </text>
+                  </Grid>
+                </>
+              ) : (
+                <>
+                  <AccordionComp name= {item.name} content={item.options.replace(/,/g, "\n")} />
+                </>
+              )}
+            </>
           );
         })}
       </Grid>
@@ -79,7 +90,7 @@ export default function LaunchFooter() {
         alignItems="center"
         flexDirection="column"
       >
-        <img src={images.logoIcon} className="footer-logoIcon" />
+        <img alt="" src={images.logoIcon} className="footer-logoIcon" />
         <Typography color="#1a2644">
           &#169; 2023 Smartups. All rights reserved.
         </Typography>
