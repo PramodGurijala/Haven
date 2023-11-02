@@ -30,11 +30,13 @@ export default function LaunchHeader() {
         style={{
           aspectRatio: isLaptop ? 2.26 : isMobile ? 0.93 : 1.68,
         }}
-      > 
+      >
         <Typography className="heading-top-launch">
-        Welcome to Smartups.<br/>
-        Your digital business<br/>
-         management platform.
+          Welcome to Smartups.
+          <br />
+          Your digital business
+          <br />
+          management platform.
         </Typography>
         <Typography className="body-top-launch">
           How will you be using our platform?
@@ -42,16 +44,20 @@ export default function LaunchHeader() {
           Select the button that best describes you.
         </Typography>
         <Grid className="launch-top-btn">
-          <Button
-            color="white"
-            onClick={() => navigate('/HomeScreen')}
-            name="Startup"
-          />
-          <Button
-            color="white"
-            // onClick={() => viewCartFunc()}
-            name="Incubator"
-          />
+          <Grid mx='2%'>
+            <Button
+              color="white"
+              onClick={() => navigate("/HomeScreen")}
+              name="Startup"
+            />
+          </Grid>
+          <Grid mx='2%'>
+            <Button
+              color="white"
+              // onClick={() => viewCartFunc()}
+              name="Incubator"
+            />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
