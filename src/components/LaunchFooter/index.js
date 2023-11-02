@@ -91,7 +91,7 @@ export default function LaunchFooter() {
         flexDirection="column"
       >
         <img alt="" src={images.logoIcon} className="footer-logoIcon" />
-        <Typography color="#1a2644">
+        <Typography color="#1a2644" textAlign='center'>
           &#169; 2023 Smartups. All rights reserved.
         </Typography>
       </Grid>
