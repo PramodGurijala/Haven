@@ -60,7 +60,7 @@ export default function LaunchFooter() {
                     // border="1px solid red"
                     className="footer-box2"
                   >
-                    <Typography color="#1a2644" pb={1} fontWeight="700">
+                    <Typography fontSize={'16px'} color="#1a2644" pb={1} fontWeight="700">
                       {item.name}
                     </Typography>
                     <text
@@ -68,6 +68,7 @@ export default function LaunchFooter() {
                         whiteSpace: "pre",
                         color: "#1a2644",
                         lineHeight: "25px",
+                        fontSize:'16px'
                       }}
                     >
                       {item.options.replace(/,/g, "\n")}

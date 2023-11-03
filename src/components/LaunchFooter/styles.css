@@ -10,7 +10,7 @@
     width: 90%;
 }
 .footer-logoIcon{
-    width: 7%;
+    width: 80px;
 }
 
 @media (max-width: 804px) { /* 804 and less */
@@ -27,6 +27,6 @@
     width: 100%;
   }
   .footer-logoIcon{
-    width: 17%;
+    width: 70px;
 }
 }
