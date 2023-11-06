@@ -52,7 +52,7 @@ export default function LaunchFooter() {
         {footerData?.map((item, i) => {
           return (
             <>
-              {ScreenWidth > 804 ? (
+              {ScreenWidth > 704 ? (
                 <>
                   <Grid
                     pt={5}
@@ -60,7 +60,7 @@ export default function LaunchFooter() {
                     // border="1px solid red"
                     className="footer-box2"
                   >
-                    <Typography fontSize={'16px'} color="#1a2644" pb={1} fontWeight="700">
+                    <Typography whiteSpace={'pre'} fontSize={'16px'} color="#1a2644" pb={1} fontWeight="700">
                       {item.name}
                     </Typography>
                     <text
