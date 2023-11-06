@@ -12,10 +12,10 @@ export default function HomeComp() {
 
     return (
         <div className="mainContainer">
-            {data.map((item, index) => {
+            {data.map((item, index, key) => {
                 return (
                     <div className={index % 2 === 0 ? "subContainer" : "subContainerReverse"}  >
-                        <div className="article" key={item.id}>
+                        <div className="article">
                             <div className="subArticle">
                                 <h2 className="header">{item.title}</h2>
                                 <p className="paragraph">{item.paragraph}</p>
@@ -23,7 +23,7 @@ export default function HomeComp() {
                             </div>
                         </div>
                         <div className="ImgBox">
-                            <img src={item.img_url} width="100%" />
+                            <img src={item.img_url} width='100%' />
                         </div>
                     </div>
                 )
