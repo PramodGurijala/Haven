@@ -10,13 +10,14 @@ export default function TextfieldComp({
   val,
   setVal,
   label,
+  error=false,
   helperText,
   type,
   disabled,
   required,
   readOnly,
   InputLabelProps,
-  InputProps
+  InputProps,
 }) {
   return (
     <>
@@ -31,7 +32,12 @@ export default function TextfieldComp({
           },
           "& .MuiFilledInput-input": {
             color: "#1A2644",
-            borderBottom:'2px solid #1A2644'
+            borderBottom: !error ? "2px solid #1A2644" : "2px solid red" ,
+            background:'#fff',
+            borderRadius:'4px 4px 0px 0px'
+          },
+          "& .css-xgij6c-MuiFormHelperText-root": {
+           color:!error ? "#fff" : "red" ,
           },
           "& .MuiInputLabel-root.Mui-focused": {
             borderBottom: "0",
@@ -44,9 +50,10 @@ export default function TextfieldComp({
         className="textfieldcomp-css"
         id="filled-basic"
         label={label}
+        error={error}
         variant="filled"
         //  defaultValue=""
-        //  helperText="Some important text"
+        helperText="Some important text"
         //  type="search"
         //  InputLabelProps={{
         //   shrink: true,
