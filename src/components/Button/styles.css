@@ -1,5 +1,5 @@
 .custom-button {
-  border-radius: 14px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
   font-size: 16px;
@@ -22,6 +22,11 @@
   /* background-color: #0d4f57;
   border: solid #0d4f57 2px; */
   /* background: none; */
+}
+.blue{
+background-color: #1A2644;
+border-color: #1A2644;
+height: 56px;
 }
 
 .orange {

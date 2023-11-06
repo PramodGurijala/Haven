@@ -7,6 +7,7 @@ const images = {
   darkTwitter: require(`../assets/darkTwitter.png`),
   smartupsLogo: require(`../assets/smartupsLogo.png`),
   logoIcon: require(`../assets/logoIcon.png`),
+  signupBG_m: require(`../assets/signupBG-m.png`),
 };
 
 export default images;

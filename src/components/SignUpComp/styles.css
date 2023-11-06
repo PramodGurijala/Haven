@@ -1,0 +1,94 @@
+.signupcomp-title {
+    display: flex;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  background-color: #1a2644;
+  max-height: 172px;
+  min-height: 80px;
+  justify-content: center;
+}
+.signupcomp-title-topography {
+  /* border: 1px solid red; */
+  max-width: 700px;
+  min-width: 280px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+}
+
+.signup-comp-boxer {
+  max-width: 700px;
+  min-width: 280px;
+  min-height: 300px;
+  height: max-content;
+  position: relative;
+  border-radius: 20px;
+  /* blur effect */
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding: 40px 5%;
+}
+
+.signup-comp-container {
+  align-items: center;
+  /* border: 5px solid red; */
+}
+
+/* galaxy fold */
+@media (max-width: 320px) {
+  .signup-comp-boxer {
+    width: 90vw;
+  }
+  .signupcomp-title-topography {
+    width: 90vw;
+    font-size: 16px;
+  }
+}
+
+/* phone */
+@media (min-width: 320px) and (max-width: 500px) {
+  .signup-comp-container {
+    aspect-ratio: 0.59;
+  }
+  .signup-comp-boxer {
+    width: 90vw;
+  }
+  .signupcomp-title-topography {
+    width: 90vw;
+    font-size: 18px;
+  }
+}
+
+/* tablets */
+@media (min-width: 420px) and (max-width: 1000px) {
+  .signup-comp-container {
+    aspect-ratio: 1.3;
+  }
+  .signup-comp-boxer {
+    width: 50vw;
+  }
+  .signupcomp-title-topography {
+    width: 50vw;
+    font-size: 22px;
+  }
+}
+
+/* desktops */
+@media (min-width: 1000px) {
+  .signup-comp-container {
+    aspect-ratio: 1.9;
+  }
+  .signup-comp-boxer {
+    width: 50vw;
+  }
+  .signupcomp-title-topography {
+    width: 50vw;
+    font-size: 28px;
+  }
+}
