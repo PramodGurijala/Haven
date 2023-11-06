@@ -1,0 +1,185 @@
+.ContainerSM{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/socailMediaBG.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    z-index: 2; 
+    /* height: 110vh; */
+    position: relative;
+    align-items: center;
+    /* margin-top: -5%; */
+    margin-top: -8%;
+}
+.mainContainerSM{
+    background-color: #1A2644;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center; 
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    padding: 4rem;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 2px solid greenyellow */
+}
+.subContainerSM{
+    display: flex;
+    align-items: center;
+    background-color: #1A2644;
+    /* border: 2px solid skyblue; */
+}
+.headerSM{
+    font-size: 40px;
+    margin-top: 10%;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #FF6102;
+}
+.SubHeaderSM{
+    color: #FFFFFF;
+    margin-top: 1%;
+    text-align: center;
+}
+.imgBox{
+    
+}
+.infoBox{
+    padding: 2px 30px;
+}
+.NameSM{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+.nameBoxSM{
+    /* width: 100%; */
+}
+.designationSM{
+    color: #FFFFFF;
+    font-size: 16px;
+
+}
+.paragraphSM{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.logoBox{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 651px) and (max-width: 880px) { 
+    .mainContainerSM{
+        background-color: #1A2644;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center; 
+        display: grid;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        padding: 2rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .subContainerSM{
+        display: flex;
+        align-items: center;
+        background-color: #1A2644;
+    }
+    .headerSM{
+        font-size: 40px;
+        margin-top: 10%;
+        font-weight: 900;
+        font-family: sans-serif;
+        color: #FF6102;
+    }
+    .SubHeaderSM{
+        color: #FFFFFF;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .infoBox{
+        padding: 2px 24px;
+    }
+
+}
+@media (max-width: 650px) {
+
+    
+    .ContainerSM{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../../assets/socailMediaBG.png");
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        z-index: 2; 
+        position: relative;
+        align-items: center;
+        margin-top: 0%;
+    }
+    .huhu{
+        overflow-x: auto; /* Enable horizontal scrolling */
+        width: 100vw;
+    }
+    .mainContainerSM{
+        background-color: #1A2644;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center; 
+        display: grid;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        padding: 1rem;
+        width: 190vw;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .subContainerSM{
+        display: flex;
+        align-items: center;
+        background-color: #1A2644;
+    }
+    .headerSM{
+        font-size: 24px;
+        /* margin-top: 10%; */
+        font-weight: 700;
+        font-family: sans-serif;
+        color: #FF6102;
+    }
+    .SubHeaderSM{
+        color: #FFFFFF;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .imgBox{
+        
+    }
+    .infoBox{
+   
+    }
+    .NameSM{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .nameBoxSM{
+        /* width: 100%; */
+    }
+    .designationSM{
+        color: #FFFFFF;
+        font-size: 16px;
+    
+    }
+    .paragraphSM{
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+    .logoBox{
+        display: flex;
+        align-items: center;
+    }
+    .dummy{
+        border: 1px solid purple;
+    }
+
+}
