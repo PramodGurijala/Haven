@@ -4,8 +4,8 @@
   align-items: center;
   height: 10vh;
   background-color: #1a2644;
-  max-height: 172px;
-  min-height: 80px;
+  max-height: 160px;
+  min-height: 70px;
   justify-content: center;
 }
 .signupcomp-title-topography {
@@ -109,6 +109,9 @@
   .signupcomp-title-topography {
     font-size: 22px;
   }
+  .signupcomp-title {
+    height: 15vh;
+  }
 }
 
 /* desktops */
@@ -122,6 +125,9 @@
   .signupcomp-title-topography {
     width: 50vw;
     font-size: 28px;
+  }
+  .signupcomp-title {
+    height: 15vh;
   }
 }
 
