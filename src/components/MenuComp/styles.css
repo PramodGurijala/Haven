@@ -59,7 +59,7 @@
     } */
   
     /* Show the burger button on small screens */
-    .bm-burger-button {
+    .bm-burger-button { 
       display: block;
       cursor: pointer;
       background: transparent;
