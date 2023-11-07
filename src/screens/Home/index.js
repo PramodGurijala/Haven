@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import HomeComp from "../../components/homeComp";
+import MenuComp from "../../components/MenuComp";
 
 
 export default function HomeScreen() {
@@ -10,6 +11,7 @@ export default function HomeScreen() {
 
   return (
     <div>
+      <MenuComp/>
       <HomeComp/>
     </div>
   );
