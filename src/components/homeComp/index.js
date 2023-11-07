@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./styles.css";
-import { homeDummyData } from "../../assets/homeDummyData";
+import {HomeData} from './HomeScreenData';
 import { useNavigate } from "react-router-dom";
 
 
 export default function HomeComp() {
-    const data = homeDummyData;
+    const data = HomeData;
     console.log("Manish", data);
     const navigate = useNavigate();
 

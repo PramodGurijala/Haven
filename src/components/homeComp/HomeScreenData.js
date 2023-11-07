@@ -1,9 +1,9 @@
-import homeImg1 from './homeImg1.png';
-import homeImg2 from './homeImg2.png';
-import homeImg3 from './homImg3.png';
+import homeImg1 from '../../assets/homeImg1.png';
+import homeImg2 from '../../assets/homeImg2.png';
+import homeImg3 from '../../assets/homImg3.png';
 
 
-export const homeDummyData = [
+export const HomeData = [
     {
         "img_url": homeImg1,
         "title": "Understand your business.",

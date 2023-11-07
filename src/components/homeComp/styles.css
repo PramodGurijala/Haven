@@ -15,8 +15,8 @@
     flex:2;
 }
 .subArticle{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 .ImgBox{
     flex: 2;
@@ -26,8 +26,7 @@
 
 }
 .header{
-padding-top:5%;
-font-size: 40px;
+font-size: 2.5rem;
 color:"#1A2644";
 }
 .paragraph{
@@ -72,7 +71,6 @@ color:"#1A2644";
     
     }
     .header{
-    padding-top:5%;
     font-size: 24px;
     color:"#1A2644";
     }
@@ -119,7 +117,6 @@ color:"#1A2644";
     
     }
     .header{
-    padding-top:2%;
     font-size: 24px;
     color:"#1A2644";
     }
