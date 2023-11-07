@@ -12,6 +12,9 @@ export default function LaunchScreen() {
   const { isMobile, isLaptop, isTablet } = ScreenSize();
   return (
     <Grid className="LaunchScreen">
+      <Grid p={2}>
+        <img alt="" style={{maxWidth:'250px'}} width={'25%'} src={images.smartupsLogo} />
+      </Grid>
       <LaunchHeader />
       <LaunchFooter />
     </Grid>
