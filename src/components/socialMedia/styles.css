@@ -33,7 +33,7 @@
 .headerSM{
     font-size: 40px;
     margin-top: 10%;
-    font-weight: 900;
+    font-weight: 700;
     font-family: sans-serif;
     color: #FF6102;
 }
@@ -91,7 +91,7 @@
     .headerSM{
         font-size: 40px;
         margin-top: 10%;
-        font-weight: 900;
+        font-weight: 700;
         font-family: sans-serif;
         color: #FF6102;
     }
@@ -101,7 +101,7 @@
         text-align: center;
     }
     .infoBox{
-        padding: 2px 24px;
+        padding: 2px 1px 2px 12px;
     }
 
 }
