@@ -1,5 +1,5 @@
 import React from 'react';
-import { dummyData } from '../../assets/dummyData';
+import { SocailData } from './SocailMediaData';
 import fbLogo from '../../assets/fbLogo.png';
 import instaLogo from '../../assets/instaLogo.png';
 import twitterLogo from '../../assets/twitterLogo.png';
@@ -8,7 +8,7 @@ import "./styles.css";
 import { Typography } from '@mui/material';
 
 export default function SocailMediaComp() {
-    const data = dummyData;
+    const data = SocailData;
     return (
         <div className='ContainerSM'>
                 <Typography className='headerSM'>Meet the Smartups team</Typography>
@@ -19,7 +19,7 @@ export default function SocailMediaComp() {
                 return (
                     <div className='subContainerSM'>
                         <div className='imgBox'>
-                            <img src={item.img_url} width='110rem' />
+                            <img src={item.img_url} width='150rem' />
                         </div>
                         <div className='infoBox'>
                             <div className='nameBoxSM'>
@@ -28,9 +28,9 @@ export default function SocailMediaComp() {
                                 <Typography className='paragraphSM' pt={1.5} pb={1.5}>{item.paragraph}</Typography>
                             </div>
                             <div className='logoBox'>
-                                <img src={fbLogo} width="36px" style={{ marginRight: '10px' }} />
-                                <img src={instaLogo} width="36px" style={{ marginRight: '10px' }} />
-                                <img src={twitterLogo} width="36px" />
+                                <img src={fbLogo} width="32rem" style={{ marginRight: '10px' }} />
+                                <img src={instaLogo} width="32rem" style={{ marginRight: '10px' }} />
+                                <img src={twitterLogo} width="32rem" />
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ export default function SocailMediaComp() {
 
 
 // export default function SocailMediaComp() {
-//     const data = dummyData;
+//     const data = SocailData;
 //     return (
 //         <Grid className='ContainerSM'>
 //             <Typography className='headerSM'>Meet the Smartups team</Typography>
