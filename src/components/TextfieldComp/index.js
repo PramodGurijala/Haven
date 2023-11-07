@@ -60,13 +60,15 @@ export default function TextfieldComp({
           "& .MuiInputLabel-root": {
             color: "#1A2644",
             transform: !val
-              ? "translate(12px, 24px) scale(1)"
-              : "translate(12px, 10px) scale(0.75)",
+              ? "translate(12px, 20px) scale(1)"
+              : "translate(12px, 7px) scale(0.75)",
           },
           "& .MuiFilledInput-input": {
             color: "#1A2644",
             backgroundColor: "#fff",
             borderRadius: "4px 4px 0px 0px",
+            paddingTop:'20px',
+            paddingBottom:'6px'
           },
           "& .css-17d4zvv-MuiInputBase-root-MuiFilledInput-root:hover": {
             background: "#fff",
@@ -81,7 +83,7 @@ export default function TextfieldComp({
           },
           "& .MuiInputLabel-root.Mui-focused": {
             // borderBottom: "0",
-            transform: "translate(12px, 10px) scale(0.75)", //
+            transform: "translate(12px, 5px) scale(0.75)", //
           },
           "& .css-19ji0dv-MuiInputBase-root-MuiFilledInput-root:before": {
             // borderBottom: "0",

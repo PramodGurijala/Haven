@@ -7,8 +7,8 @@ import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import LaunchFooter from "../LaunchFooter";
 
-export function SignUpComp({ title, content }) {
-  const { isMobile, isLaptop, isTablet } = ScreenSize();
+export function SignUpComp({ title, content, thumb }) {
+  const { isMobile, isLaptop, isTablet,  } = ScreenSize();
   return (
     <Grid>
       <Grid className="signupcomp-title">
@@ -21,13 +21,7 @@ export function SignUpComp({ title, content }) {
       >
         <img
           alt=""
-          src={
-            isLaptop
-              ? images.bg_dt_launch
-              : isMobile
-              ? images.signupBG_m
-              : images.bg_tb_launch
-          }
+        //   src={Screen.width > 900 ? images.signupBG_L : images.signupBG_m}
           //   src={images.signupBG_m}
           style={{
             width: "100vw",
@@ -35,7 +29,24 @@ export function SignUpComp({ title, content }) {
           }}
         ></img>
 
-        <Grid className="signup-comp-boxer">{content}</Grid>
+        {thumb ? (
+          <>
+            <img className="signup_thumbsUp_L" alt="" src={images.thumbsUp_L} />
+          </>
+        ) : null}
+
+        <Grid className="signup-comp-boxer">
+          {thumb ? (
+            <>
+              <img
+                className="signup_thumbsUp_m"
+                alt=""
+                src={images.thumbsUp_L}
+              />
+            </>
+          ) : null}
+          {content}
+        </Grid>
       </Grid>
       <LaunchFooter />
     </Grid>

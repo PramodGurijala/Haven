@@ -32,6 +32,7 @@ export function BDSurvey() {
           </Grid>
         }
         title={"Business Diagnostic Survey"}
+        thumb={true}
       />
     </>
   );

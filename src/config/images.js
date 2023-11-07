@@ -8,6 +8,8 @@ const images = {
   smartupsLogo: require(`../assets/smartupsLogo.png`),
   logoIcon: require(`../assets/logoIcon.png`),
   signupBG_m: require(`../assets/signupBG-m.png`),
+  signupBG_L: require(`../assets/signupBG_L.jpg`),
+  thumbsUp_L: require(`../assets/thumbsUp_L.png`),
 };
 
 export default images;
