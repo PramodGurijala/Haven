@@ -29,10 +29,11 @@
   align-items: center;
   justify-content: center;
   /* border: 1px solid red; */
-  padding: 40px 5%;
+  padding: 30px 5%;
+  margin: 30px 0;
   /* blur effect does not work on separate opacity attribute */
   background-color: rgb(255 255 255 / 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 
 /* NO thumbs up on left for mobile > 550 */
@@ -43,11 +44,26 @@
 /* thumbs up on top for mobile < 550 */
 .signup_thumbsUp_m {
   width: 100px;
+  margin-bottom: 20px;
+}
+/* background pic for less than 700 */
+.signup-comp-container {
+  aspect-ratio: 0.59;
+  align-items: center;
+  background: no-repeat url("../../assets/signupBG-m.png");
+  /* border: 5px solid red; */
+  background-size: cover;
 }
 
-.signup-comp-container {
-  align-items: center;
-  /* border: 5px solid red; */
+/* background pic for more than 700 */
+@media (min-width: 700px) {
+  .signup-comp-container {
+    align-items: center;
+    aspect-ratio: 1.8;
+    background: no-repeat url("../../assets/signupBG_L.jpg");
+    /* border: 5px solid red; */
+    background-size: cover;
+  }
 }
 
 /* galaxy fold */
@@ -64,7 +80,7 @@
 /* phone */
 @media (min-width: 320px) and (max-width: 430px) {
   .signup-comp-container {
-    /* aspect-ratio: 0.59; */
+    aspect-ratio: 0.59;
   }
   .signup-comp-boxer {
     width: 90vw;
@@ -78,7 +94,7 @@
 /* tablets */
 @media (min-width: 431px) and (max-width: 1000px) {
   .signup-comp-container {
-    /* aspect-ratio: 1.8; */
+    aspect-ratio: 1.8;
   }
   .signup-comp-boxer {
     width: 50vw;
@@ -98,7 +114,7 @@
 /* desktops */
 @media (min-width: 1000px) {
   .signup-comp-container {
-    /* aspect-ratio: 1.8; */
+    aspect-ratio: 1.8;
   }
   .signup-comp-boxer {
     width: 50vw;

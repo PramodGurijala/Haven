@@ -9,6 +9,7 @@ import images from "../../config/images";
 import TextfieldComp from "../../components/TextfieldComp";
 
 export function BDSurvey() {
+  const navigate = useNavigate();
   const [position, setPosition] = useState("");
   const [company, setCompany] = useState("");
   const [idNum, setIdNum] = useState("");
@@ -17,22 +18,44 @@ export function BDSurvey() {
     <>
       <SignUpComp
         content={
-          <Grid className="BDSurvey-boxer">
+          <Grid rowGap={"10px"} className="BDSurvey-boxer">
             <Typography color={"#fff"}>Let's verify your details.</Typography>
-            <div style={{ height: "30px" }}></div>
-            <TextfieldComp error={true} label="Position / role" val={position} setVal={setPosition} />
-            <div style={{ height: "20px" }}></div>
-            <TextfieldComp label="Company name" val={company} setVal={setCompany} />
-            <div style={{ height: "20px" }}></div>
-            <TextfieldComp label="Personal ID number" val={idNum} setVal={setIdNum} />
-            <div style={{ height: "20px" }}></div>
-            <TextfieldComp label="Business registeration number" val={regNum} setVal={setRegNum} />
-            <div style={{ height: "30px" }}></div>
-            <Button name="Verify" color="blue" />
+            {/* <div style={{ height: "30px" }}></div> */}
+            <TextfieldComp
+              error={true}
+              label="Position / role"
+              val={position}
+              setVal={setPosition}
+            />
+            {/* <div style={{ height: "20px" }}></div> */}
+            <TextfieldComp
+              label="Company name"
+              val={company}
+              setVal={setCompany}
+            />
+            {/* <div style={{ height: "20px" }}></div> */}
+            <TextfieldComp
+              label="Personal ID number"
+              val={idNum}
+              setVal={setIdNum}
+            />
+            {/* <div style={{ height: "20px" }}></div> */}
+            <TextfieldComp
+              label="Business registeration number"
+              val={regNum}
+              setVal={setRegNum}
+            />
+            {/* <div style={{ height: "30px" }}></div> */}
+            <Button
+              name="Verify"
+              color="blue"
+              onClick={() => {
+                navigate("/VerifyBDSurvey");
+              }}
+            />
           </Grid>
         }
         title={"Business Diagnostic Survey"}
-        thumb={true}
       />
     </>
   );

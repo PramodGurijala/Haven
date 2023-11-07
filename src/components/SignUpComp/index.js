@@ -8,7 +8,8 @@ import images from "../../config/images";
 import LaunchFooter from "../LaunchFooter";
 
 export function SignUpComp({ title, content, thumb }) {
-  const { isMobile, isLaptop, isTablet,  } = ScreenSize();
+  const { isMobile, isLaptop, isTablet, ScreenWidth, ScreenHeight } =
+    ScreenSize();
   return (
     <Grid>
       <Grid className="signupcomp-title">
@@ -18,16 +19,18 @@ export function SignUpComp({ title, content, thumb }) {
         className="signup-comp-container"
         display={"flex"}
         justifyContent={"center"}
+        style={{
+        //   aspectRatio: ScreenWidth / ScreenHeight,
+        }}
       >
-        <img
+        {/* <img
           alt=""
-        //   src={Screen.width > 900 ? images.signupBG_L : images.signupBG_m}
-          //   src={images.signupBG_m}
+          src={ScreenWidth > 900 ? images.signupBG_L : images.signupBG_m}
           style={{
             width: "100vw",
             position: "absolute",
           }}
-        ></img>
+        ></img> */}
 
         {thumb ? (
           <>
@@ -35,7 +38,11 @@ export function SignUpComp({ title, content, thumb }) {
           </>
         ) : null}
 
-        <Grid className="signup-comp-boxer">
+        <Grid className="signup-comp-boxer"
+        style={{
+            // aspectRatio: ScreenWidth / ScreenHeight,
+          }}
+        >
           {thumb ? (
             <>
               <img

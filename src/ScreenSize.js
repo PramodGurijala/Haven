@@ -7,13 +7,16 @@ export const ScreenSize = () => {
   const isTablet = useMediaQuery({
     query: "(max-width: 800px) && (min-width: 430px)",
   });
-
+  var ScreenWidth = (window.innerWidth > 0) ? window.innerWidth : Screen.width;
+  var ScreenHeight = (window.innerHeight > 0) ? window.innerHeight : Screen.height;
   return useMemo(
     () => ({
       isMobile,
       isLaptop,
       isTablet,
+      ScreenWidth,
+      ScreenHeight
     }),
-    [isLaptop, isMobile, isTablet]
+    [isLaptop, isMobile, isTablet, ScreenWidth, ScreenHeight]
   );
 };
