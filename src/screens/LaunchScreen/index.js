@@ -5,7 +5,8 @@ import { TextField, Grid, Typography, Checkbox } from "@mui/material";
 import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
-import LaunchFooter from "../../components/LaunchFooter";
+import LaunchFooter from '../../components/LaunchFooter';
+import LaunchHeader from "../../components/LaunchHeader";
 import SocailMediaComp from "../../components/socialMedia";
 export default function LaunchScreen() {
   const navigate = useNavigate();
