@@ -1,14 +1,14 @@
-import profileImg from '../assets/profile_img.png';
-import profileImg2 from '../assets/profile_img2.png';
-import profileImg3 from '../assets/profile_img3.png';
-import profileImg4 from '../assets/profile_img4.png';
+import profileImg from '../../assets/profile_img.png';
+import profileImg2 from '../../assets/profile_img2.png';
+import profileImg3 from '../../assets/profile_img3.png';
+import profileImg4 from '../../assets/profile_img4.png';
 
-export const dummyData = [
+export const SocailData = [
     {
         "name":"Angus Jamian Human",
         "img_url": profileImg,
         "designation": "Founder",
-        "paragraph": "Witness the breathtaking beauty of a sunset over the ocean, casting warm hues across the sky, creating a mesmerizing scene."
+        "paragraph": "An ambitious and exquisite personality that always strives to exceed expectations. Always there when someone is in need."
     },
     {
         "name":"Tasmin King",

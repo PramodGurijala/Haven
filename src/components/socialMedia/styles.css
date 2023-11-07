@@ -63,7 +63,7 @@
 }
 .paragraphSM{
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .logoBox{
     display: flex;
@@ -71,6 +71,7 @@
 }
 
 @media (min-width: 651px) and (max-width: 880px) { 
+    
     .mainContainerSM{
         background-color: #1A2644;
         /* display: flex; */
@@ -121,6 +122,7 @@
     .huhu{
         overflow-x: auto; /* Enable horizontal scrolling */
         width: 100vw;
+        background-color: #1A2644;
     }
     .mainContainerSM{
         background-color: #1A2644;
@@ -172,7 +174,7 @@
     }
     .paragraphSM{
         color: #FFFFFF;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .logoBox{
         display: flex;
