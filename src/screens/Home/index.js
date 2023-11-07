@@ -8,6 +8,9 @@ import LaunchFooter from "../../components/LaunchFooter";
 import { Grid, Typography } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
 import { HomeData } from "../../screens/Home/HomeScreenData";
+import HomeComp from "../../components/homeComp";
+import MenuComp from "../../components/MenuComp";
+
 
 export default function HomeScreen() {
   const navigate = useNavigate();
