@@ -50,11 +50,12 @@ export default function MenuComp() {
                 <div
                   style={{
                     display: "flex",
-                    height: "60px",
-                    alignItems: "center",
+                    height: "50px",
+                    alignItems: "flex-end",
                     paddingLeft: "60px",
                     color: "#1A264480",
                     fontWeight: "500",
+                    paddingBottom:'10px'
                   }}
                 >
                   Menu

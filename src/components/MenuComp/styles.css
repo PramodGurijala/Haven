@@ -9,9 +9,10 @@
 
 .menu-crossButtonClassName {
   /* border: 5px solid green; */
-  top: 19px !important;
+  top: 30px !important;
   left: 25px !important;
   width: 18px !important;
+  color: #1A2644 !important;
 }
 .menu-burgerButtonClassName {
   /* border: 5px solid blue; */
@@ -19,10 +20,12 @@
   width: 35px;
   position: relative;
   margin-right: 3vw;
+  color: #1A2644 !important;
   /* right: 0; */
 }
 
 .menu-crossClassName {
+  /* color: red !important; */
   /* border: 5px solid green; */
 }
 .bm-menu-wrap {
