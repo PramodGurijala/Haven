@@ -32,7 +32,6 @@
     font-size: 40px;
     margin-top: 10%;
     font-weight: 700;
-    font-family: sans-serif;
     color: #FF6102;
 }
 .SubHeaderSM{
@@ -90,7 +89,7 @@
         font-size: 40px;
         margin-top: 10%;
         font-weight: 700;
-        font-family: sans-serif;
+    
         color: #FF6102;
     }
     .SubHeaderSM{
@@ -142,7 +141,7 @@
         font-size: 24px;
         /* margin-top: 10%; */
         font-weight: 700;
-        font-family: sans-serif;
+
         color: #FF6102;
     }
     .SubHeaderSM{
