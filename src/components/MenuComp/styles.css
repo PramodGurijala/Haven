@@ -6,6 +6,24 @@
   align-items: center;
   justify-content: space-between;
 }
+.menu-item {
+  color: rgb(209, 205, 205); 
+  text-align: left; 
+  margin: 2px; 
+}
+
+#Pricing,
+#Sign Up {
+  color: #1A2644;
+}
+
+.loginButton {
+  background-color: #FF6102; 
+  color: white;
+  padding: 8px 30px;
+  border-radius: 10px; 
+  
+}
 
 .menu-crossButtonClassName {
   /* border: 5px solid green; */

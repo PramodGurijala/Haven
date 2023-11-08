@@ -103,13 +103,11 @@ export default function MenuComp() {
             </Menu>
           </>
         ) : (
-          <><a id="Pricing" className="menu-item">
-                    Pricing
-                  </a>
-
-                  <a id="About Us" className="menu-item">
+          <>
+          <a id="About Us" className="menu-item">
                     About Us
                   </a>
+
                   <a id="Resources" className="menu-item">
                     Resources
                   </a>
@@ -119,10 +117,20 @@ export default function MenuComp() {
                   <a id="Products" className="menu-item">
                     Products
                   </a>
+                  <a id="Pricing" className="menu-item">
+                    Pricing
+                  </a>
 
                   <a id="Contact Us" className="menu-item">
                     Contact Us
-                  </a></>
+                  </a>
+                  <a id="Sign Up" style={{ textDecoration: "underline" }}>
+            Sign Up
+          </a>
+          <a id="Log in" className="loginButton">
+            Log in
+          </a>
+                  </>   
         )}
       </div>
    
