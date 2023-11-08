@@ -17,7 +17,9 @@ export default function LaunchScreen() {
         <img alt="" style={{maxWidth:'250px'}} width={'25%'} src={images.smartupsLogo} />
       </Grid>
       <LaunchHeader />
+      <div className="SocailMediaGrid">
       <SocailMediaComp/>
+      </div>
       <LaunchFooter />
     </Grid>
   );

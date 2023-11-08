@@ -1,0 +1,13 @@
+
+@media (min-width: 551px) and (max-width: 880px) { 
+    .SocailMediaGrid{
+        margin-top: -7%;
+        border: 2px solid rgb(17, 0, 255)(4, 0, 255);
+    }
+}
+@media (max-width: 550px) { 
+    .SocailMediaGrid{
+        margin-top: -5%;
+        border: 2px solid red;
+    }
+}
