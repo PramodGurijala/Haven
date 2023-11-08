@@ -11,3 +11,76 @@
         border: 2px solid red;
     }
 }
+.top_launch {
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 7%;
+    position: relative;
+  }
+  
+  .launch-top-btn {
+    flex-direction: row;
+    display: flex;
+  }
+  
+  @media (min-width: 431px) and (max-width: 530px), (min-width: 799px) {
+    .top_launch {
+      padding-bottom: 5%;
+    }
+  }
+  
+  .heading-top-launch {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .body-top-launch {
+    color: white;
+    text-align: center;
+  }
+  
+  /* phone */
+  @media (max-width: 680px) {
+    .body-top-launch {
+      font-size: 13px;
+    }
+    .heading-top-launch {
+      font-size: 18px;
+    }
+  }
+  
+  /* thinner phones - galaxy fold etc */
+  @media (max-width: 340px) {
+    .body-top-launch {
+      font-size: 11px;
+    }
+    .heading-top-launch {
+      font-size: 15px;
+    }
+  }
+  
+  /* tablets */
+  @media (max-width: 950px) and (min-width: 680px) {
+    .body-top-launch {
+      font-size: 18px;
+    }
+    .heading-top-launch {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  
+  /* desktops */
+  @media (min-width: 950px) {
+    .heading-top-launch {
+      font-size: 38px;
+      line-height: 45px;
+    }
+  }
+  
