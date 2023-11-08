@@ -10,7 +10,6 @@
     position: relative;
     align-items: center;
     /* margin-top: -5%; */
-    margin-top: -8%;
 }
 .mainContainerSM{
     background-color: #1A2644;
@@ -117,7 +116,6 @@
         z-index: 2; 
         position: relative;
         align-items: center;
-        margin-top: 0%;
     }
     .huhu{
         overflow-x: auto; /* Enable horizontal scrolling */
