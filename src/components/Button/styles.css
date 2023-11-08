@@ -4,10 +4,12 @@
   cursor: pointer;
   font-size: 16px;
   font-family: Helvetica;
-  width: 150px;
+  /* max-width: 150px; */
   height: 40px;
   border: 2px solid #fff;
   background: none;
+  /* min-width: 100px; */
+  width: 150px;
 }
 
 .button-container button:disabled {
@@ -35,12 +37,22 @@
 
 /* phone */
 @media (max-width: 450px) {
+  .custom-button {
+    width: 100px;
+  }
 }
 
 /* tablets */
 @media (min-width: 450px) and (max-width: 950px) {
+  .custom-button {
+    /* width: 100px; */
+  }
+
 }
 
 /* desktops */
 @media (min-width: 950px) {
+  .custom-button {
+    /* width: 100px; */
+  }
 }

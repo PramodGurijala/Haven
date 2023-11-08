@@ -7,12 +7,17 @@ import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import LaunchFooter from '../../components/LaunchFooter';
 import LaunchHeader from "../../components/LaunchHeader";
+import SocailMediaComp from "../../components/socialMedia";
 export default function LaunchScreen() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet } = ScreenSize();
   return (
     <Grid className="LaunchScreen">
+      <Grid p={2}>
+        <img alt="" style={{maxWidth:'250px'}} width={'25%'} src={images.smartupsLogo} />
+      </Grid>
       <LaunchHeader />
+      <SocailMediaComp/>
       <LaunchFooter />
     </Grid>
   );

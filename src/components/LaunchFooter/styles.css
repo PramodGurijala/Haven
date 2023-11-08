@@ -1,3 +1,7 @@
+.footer-boxer {
+  flex-direction: row;
+}
+
 .footer-box2 {
   width: 12.5%;
 }
@@ -10,10 +14,10 @@
     width: 90%;
 }
 .footer-logoIcon{
-    width: 7%;
+    width: 80px;
 }
 
-@media (max-width: 804px) {
+@media (max-width: 704px) { /* 804 and less */
   .footer-boxer {
     flex-direction: column;
   }
@@ -27,6 +31,6 @@
     width: 100%;
   }
   .footer-logoIcon{
-    width: 17%;
+    width: 70px;
 }
 }

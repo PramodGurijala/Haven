@@ -1,6 +1,7 @@
 .subContainer{
     display: flex;
     flex-direction: row;
+    z-index: -1;
 }
 .subContainerReverse{
     display: flex;
@@ -14,8 +15,8 @@
     flex:2;
 }
 .subArticle{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 .ImgBox{
     flex: 2;
@@ -25,8 +26,7 @@
 
 }
 .header{
-padding-top:5%;
-font-size: 40px;
+font-size: 2.5rem;
 color:"#1A2644";
 }
 .paragraph{
@@ -42,7 +42,54 @@ color:"#1A2644";
     border: 0px solid rgb(226, 108, 65);
 }
 
-@media (max-width: 500px) {
+/* For Tablet */
+@media (min-width: 601px) and (max-width: 880px) { 
+    .subContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .subContainerReverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex:2;
+    }
+    .subArticle{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .ImgBox{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .header{
+    font-size: 24px;
+    color:"#1A2644";
+    }
+    .paragraph{
+        font-size: 14px;
+        color:'#1A2644';
+    }
+    .btn{
+        padding:3% 5%;
+        border-radius: 5%;
+        font-size: 18px;
+        color:white;
+        background-color: rgb(226, 108, 65);
+        border: 0px solid rgb(226, 108, 65);
+    }
+
+}
+
+@media (max-width: 600px) {
     .subContainer{
         display: flex;
         flex-direction: column-reverse;
@@ -70,7 +117,6 @@ color:"#1A2644";
     
     }
     .header{
-    padding-top:2%;
     font-size: 24px;
     color:"#1A2644";
     }
