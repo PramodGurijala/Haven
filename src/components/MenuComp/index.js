@@ -103,7 +103,26 @@ export default function MenuComp() {
             </Menu>
           </>
         ) : (
-          <>browser menu</>
+          <><a id="Pricing" className="menu-item">
+                    Pricing
+                  </a>
+
+                  <a id="About Us" className="menu-item">
+                    About Us
+                  </a>
+                  <a id="Resources" className="menu-item">
+                    Resources
+                  </a>
+                  <a id="News" className="menu-item">
+                    News
+                  </a>
+                  <a id="Products" className="menu-item">
+                    Products
+                  </a>
+
+                  <a id="Contact Us" className="menu-item">
+                    Contact Us
+                  </a></>
         )}
       </div>
    
