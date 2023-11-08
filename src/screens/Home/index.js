@@ -31,12 +31,12 @@ export default function HomeScreen() {
         </Typography>
       </Grid>
 
-      <div className="mainContainer">
+      <div className="mainContainer_HS">
         {HomeData.map((item, index, key) => {
           return (
             <div
               className={
-                index % 2 === 0 ? "subContainer" : "subContainerReverse"
+                index % 2 === 0 ? "subContainer_HS" : "subContainerReverse_HS"
               }
             >
               <div className="article">
@@ -53,7 +53,9 @@ export default function HomeScreen() {
           );
         })}
       </div>
+      <div className="socailMediaDiv">
       <SocailMediaComp />
+      </div>
       <LaunchFooter />
     </div>
   );

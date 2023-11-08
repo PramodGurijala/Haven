@@ -66,7 +66,9 @@ export default function LaunchScreen() {
           </Grid>
         </Grid>
       </Grid>
+      <div className="socailMedia_LS">
       <SocailMediaComp />
+      </div>
       <LaunchFooter />
     </Grid>
   );
