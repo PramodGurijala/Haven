@@ -22,7 +22,7 @@ export default function HomeScreen() {
           Welcome to Smartups,
           <br />
           your digital business
-          {ScreenWidth < 601 ? <br /> : null}
+          {ScreenWidth < 601 ? <br /> : <> </>}
           support platform.
           <br />
           Come for the features,
