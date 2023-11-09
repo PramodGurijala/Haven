@@ -11,7 +11,7 @@ import AccordionComp from "../Accordian";
 export default function LaunchFooter() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet, ScreenWidth } = ScreenSize();
-  // console.log("####", ScreenWidth);
+
   return (
     <Grid className="LaunchFooter">
       <Grid
@@ -35,7 +35,7 @@ export default function LaunchFooter() {
             src={images.smartupsLogo}
             className="smartupsLogo-footer"
           />
-          <Typography pt={2} pb={2} color="#1A2644">
+          <Typography className="Footer-bodyText" pt={2} pb={2} color="#1A2644">
             Thinking outside the box so we can help you remain compliant.
           </Typography>
           <Grid mb={3} display="flex">
@@ -52,7 +52,7 @@ export default function LaunchFooter() {
         {footerData?.map((item, i) => {
           return (
             <>
-              {ScreenWidth > 704 ? (
+              {ScreenWidth > 600 ? (
                 <>
                   <Grid
                     pt={5}
@@ -63,16 +63,16 @@ export default function LaunchFooter() {
                     <Typography whiteSpace={'pre'} fontSize={'16px'} color="#1a2644" pb={1} fontWeight="700">
                       {item.name}
                     </Typography>
-                    <text
+                    <Typography className="Footer-bodyText"
                       style={{
                         whiteSpace: "pre",
                         color: "#1a2644",
                         lineHeight: "25px",
-                        fontSize:'16px'
+                        // fontSize:'16px'
                       }}
                     >
                       {item.options.replace(/,/g, "\n")}
-                    </text>
+                    </Typography>
                   </Grid>
                 </>
               ) : (

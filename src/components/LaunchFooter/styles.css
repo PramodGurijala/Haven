@@ -3,34 +3,48 @@
 }
 
 .footer-box2 {
-  width: 12.5%;
+  /* width: 12.5%; */
 }
 
 .footer-box1 {
   width: 20%;
 }
 
-.smartupsLogo-footer{
-    width: 90%;
+.smartupsLogo-footer {
+  width: 90%;
 }
-.footer-logoIcon{
-    width: 80px;
+.footer-logoIcon {
+  width: 80px;
 }
 
-@media (max-width: 704px) { /* 804 and less */
+.Footer-bodyText {
+  font-size: 16px;
+}
+
+/* 601 to 800 */
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .Footer-bodyText {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  /* 604 and less */
   .footer-boxer {
     flex-direction: column;
   }
   .footer-box2 {
     width: 100%;
   }
-  .smartupsLogo-footer{
+  .smartupsLogo-footer {
     width: 30%;
-}
+  }
   .footer-box1 {
     width: 100%;
   }
-  .footer-logoIcon{
+  .footer-logoIcon {
     width: 70px;
-}
+  }
 }
