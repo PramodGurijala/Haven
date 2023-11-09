@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
+import MenuComp from "../../components/MenuComp";
 import SocailMediaComp from "../../components/socialMedia";
 import LaunchFooter from "../../components/LaunchFooter";
 import { Grid, Typography } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
 import { HomeData } from "../../screens/Home/HomeScreenData";
+// import MenuComp from "../../components/MenuComp";
+
 
 export default function HomeScreen() {
   const navigate = useNavigate();
