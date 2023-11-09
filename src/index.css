@@ -8,3 +8,7 @@ body {
 code {
   font-family: 'Poppins';
 }
+
+.MuiSvgIcon-root {
+  color: #1A2644;
+}

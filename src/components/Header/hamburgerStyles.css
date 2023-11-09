@@ -1,0 +1,59 @@
+#hamburgerList-text {
+  color: rgba(26, 38, 68, 0.5);
+}
+
+#menuList-loginText {
+  border-bottom: 1.5px solid #1A264433;
+  border-top: 1.5px solid #1A264433;
+  margin: 0px 25px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.menuList-header {
+  display: flex;
+  height: 50px;
+  align-items: flex-end;
+  padding-left: 60px;
+  color: rgba(26, 38, 68, 0.5);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+/* menu closs icon */
+.menu-crossButtonClassName {
+  top: 21px !important;
+  left: 18px !important;
+  color: #1a2644;
+  height: 35px !important;
+  width: 33px !important;
+}
+/* menu icon */
+.menu-burgerButtonClassName {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  color: #1a2644;
+}
+
+/* menu outer container */
+.bm-menu-wrap {
+  top: 0;
+  width: 80vw !important;
+  background: #fff;
+  max-width: 320px;
+}
+
+.menu-list {
+  display: flex;
+  width: 100%;
+}
+/* overlay */
+.menu-overlay {
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5) !important;
+}

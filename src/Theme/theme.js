@@ -18,11 +18,11 @@ const theme = createTheme({
     },
     orange: {
       main: "#FE9400",
-      contrastText: "#000000",
+      contrastText: "#fff",
     },
     white: {
       main: "#fff",
-      contrastText: "#000",
+      contrastText: "#1A2644",
     },
     blue: {
       main: "#3C8C9E",
@@ -39,28 +39,18 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins",
-    // fontWeightLight: 300,
-    // fontWeightRegular: 500,
-    // fontWeightBold: 600,
-    // fontSize: 20,
+    color: "#1A2644",
     h1: {
       fontWeight: "bold",
-      //   fontSize: "24px",
-      color: "#333333",
     },
     h6: {
       fontWeight: "bold",
-      //   fontSize: "24px",
-      color: "#5F5D5D",
     },
     body2: {
-      //   fontSize: "14px",
-      color: "#5f5d5d",
+        // fontSize: "10px",
     },
     body1: {
-      //   fontSize: "10px",
-      //   paddingTop: "8px",
-      //   display: "block",
+      // fontSize: "14px",
     },
   },
 });

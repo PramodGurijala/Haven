@@ -5,16 +5,16 @@ import { TextField, Grid, Typography, Checkbox } from "@mui/material";
 import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
-import LaunchFooter from "../../components/LaunchFooter";
+import Footer from "../../components/Footer";
 import SocailMediaComp from "../../components/socialMedia";
+import { Header } from "../../components/Header";
+
 export default function LaunchScreen() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet } = ScreenSize();
   return (
     <Grid className="LaunchScreen">
-      <Grid p={2}>
-        <Typography>header component</Typography>
-      </Grid>
+      <Header />
       <Grid className="LaunchHeader">
         <img
           alt=""
@@ -67,9 +67,9 @@ export default function LaunchScreen() {
         </Grid>
       </Grid>
       <div className="socailMedia_LS">
-      <SocailMediaComp />
+        <SocailMediaComp />
       </div>
-      <LaunchFooter />
+      <Footer />
     </Grid>
   );
 }

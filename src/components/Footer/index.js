@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import { TextField, Grid, Typography, Checkbox } from "@mui/material";
-import Button from "../../components/Button";
+import Button from "../Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import { footerData } from "./footerData";
 import AccordionComp from "../Accordian";
 
-export default function LaunchFooter() {
+export default function Footer() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet, ScreenWidth } = ScreenSize();
   return (
-    <Grid className="LaunchFooter">
+    <Grid className="Footer">
       <Grid
         className="footer-boxer"
         container
@@ -59,7 +59,13 @@ export default function LaunchFooter() {
                     // border="1px solid red"
                     className="footer-box2"
                   >
-                    <Typography whiteSpace={'pre'} fontSize={'16px'} color="#1a2644" pb={1} fontWeight="700">
+                    <Typography
+                      whiteSpace={"pre"}
+                      fontSize={"16px"}
+                      color="#1a2644"
+                      pb={1}
+                      fontWeight="700"
+                    >
                       {item.name}
                     </Typography>
                     <Typography className="Footer-bodyText"
@@ -76,7 +82,10 @@ export default function LaunchFooter() {
                 </>
               ) : (
                 <>
-                  <AccordionComp name= {item.name} content={item.options.replace(/,/g, "\n")} />
+                  <AccordionComp
+                    name={item.name}
+                    content={item.options.replace(/,/g, "\n")}
+                  />
                 </>
               )}
             </>
@@ -91,7 +100,7 @@ export default function LaunchFooter() {
         flexDirection="column"
       >
         <img alt="" src={images.logoIcon} className="footer-logoIcon" />
-        <Typography color="#1a2644" textAlign='center'>
+        <Typography color="#1a2644" textAlign="center">
           &#169; 2023 Smartups. All rights reserved.
         </Typography>
       </Grid>
