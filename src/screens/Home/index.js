@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
-import HomeComp from "../../components/homeComp";
 import MenuComp from "../../components/MenuComp";
 import SocailMediaComp from "../../components/socialMedia";
 import LaunchFooter from "../../components/LaunchFooter";
 import { Grid, Typography } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
 import { HomeData } from "../../screens/Home/HomeScreenData";
-import HomeComp from "../../components/homeComp";
-import MenuComp from "../../components/MenuComp";
+// import MenuComp from "../../components/MenuComp";
 
 
 export default function HomeScreen() {
