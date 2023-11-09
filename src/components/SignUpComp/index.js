@@ -5,7 +5,6 @@ import { TextField, Grid, Typography, Checkbox } from "@mui/material";
 import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
-import LaunchFooter from "../LaunchFooter";
 
 export function SignUpComp({ title, content, thumb }) {
   const { isMobile, isLaptop, isTablet, ScreenWidth, ScreenHeight } =

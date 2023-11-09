@@ -3,9 +3,9 @@
   color: white;
   cursor: pointer;
   font-size: 16px;
-  /* max-width: 150px; */
+  width: max-content;
   height: 40px;
-  border: 2px solid #fff;
+  border: 1.5px solid #fff;
   background: none;
   font-weight: 500;
 }
@@ -13,56 +13,54 @@
 .button-container button:disabled {
   color: #fff;
   background-color: #c8c8c8;
-  border: 2px solid #c8c8c8;
+  border: 1.5px solid #c8c8c8;
   font-weight: 500;
 }
 
 /* Button Colors */
 
-.white {
-  /* background-color: #0d4f57;
-  border: solid #0d4f57 2px; */
-  /* background: none; */
+.whiteOrange {
+  background-color: #ff6102;
+  border-color: #ff6102;
 }
-.blue{
-background-color: #1A2644;
-border-color: #1A2644;
-height: 56px;
+.blue {
+  background-color: #1a2644;
+  border-color: #1a2644;
+  height: 56px;
 }
 
-.whiteBlue{
+.whiteBlue {
   background-color: #fff;
-  border-color:#1A2644;
-  color: #1A2644;
+  border-color: #1a2644;
+  color: #1a2644;
 }
 
 .orange {
-  background-color: #FF6102;
-  border-color:#FF6102;
+  background-color: #ff6102;
+  border-color: #ff6102;
   color: #fff;
 }
 
 .borderLess {
 }
 
-/* phone */
+/* phone less than 450 */
 @media (max-width: 450px) {
   .custom-button {
-    width: 100px;
+    min-width: 80px;
   }
 }
 
-/* tablets */
+/* tablets 450 to 950 */
 @media (min-width: 450px) and (max-width: 950px) {
   .custom-button {
-    /* width: 100px; */
+    min-width: 100px;
   }
-
 }
 
-/* desktops */
+/* desktops 950 and more */
 @media (min-width: 950px) {
   .custom-button {
-    /* width: 100px; */
+    min-width: 120px;
   }
 }

@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import TextfieldComp from "../../components/TextfieldComp";
-import LaunchFooter from "../../components/LaunchFooter";
+import Footer from "../../components/Footer";
 
 export function BDSurvey() {
   const navigate = useNavigate();
@@ -57,7 +57,7 @@ export function BDSurvey() {
         }
         title={"Business Diagnostic Survey"}
       />
-       <LaunchFooter />
+       <Footer />
     </>
   );
 }
