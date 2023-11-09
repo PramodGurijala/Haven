@@ -1,20 +1,20 @@
 .custom-button {
-  border-radius: 14px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
   font-size: 16px;
-  /* max-width: 150px; */
+  width: 150px;
   height: 40px;
   border: 2px solid #fff;
   background: none;
-  /* min-width: 100px; */
-  width: 150px;
+  font-weight: 500;
 }
 
 .button-container button:disabled {
-  color: #000;
+  color: #fff;
   background-color: #c8c8c8;
   border: 2px solid #c8c8c8;
+  font-weight: 500;
 }
 
 /* Button Colors */
@@ -23,6 +23,17 @@
   /* background-color: #0d4f57;
   border: solid #0d4f57 2px; */
   /* background: none; */
+}
+.blue{
+background-color: #1A2644;
+border-color: #1A2644;
+height: 56px;
+}
+
+.whiteBlue{
+  background-color: #fff;
+  border-color:#1A2644;
+  color: #1A2644;
 }
 
 .orange {

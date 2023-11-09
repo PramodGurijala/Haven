@@ -11,7 +11,6 @@ import AccordionComp from "../Accordian";
 export default function LaunchFooter() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet, ScreenWidth } = ScreenSize();
-
   return (
     <Grid className="LaunchFooter">
       <Grid
