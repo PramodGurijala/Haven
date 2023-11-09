@@ -38,7 +38,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "",
+    fontFamily: "Poppins",
     // fontWeightLight: 300,
     // fontWeightRegular: 500,
     // fontWeightBold: 600,
