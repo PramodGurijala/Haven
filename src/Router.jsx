@@ -4,6 +4,7 @@ import HomeScreen from './screens/Home';
 import { BDSurvey } from "./screens/BDSurvey";
 import {VerifyBDSurvey} from './screens/BDSurvey/VerifyBDSurvey';
 import  EmailScreen  from "./screens/EmailScreen";
+import OtpScreen from "./screens/OtpScreen";
 
 
 export function AppRouter() {
@@ -16,6 +17,8 @@ export function AppRouter() {
       <Route path="/BDSurvey" element={<BDSurvey />} />
       <Route path="/VerifyBDSurvey" element={<VerifyBDSurvey />} />
       <Route path="/EmailScreen" element={<EmailScreen />} />
+      <Route path="/OtpScreen" element={<OtpScreen />} />
+
 
     </Routes>
   );
