@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import SocailMediaComp from "../../components/socialMedia";
-import LaunchFooter from "../../components/LaunchFooter";
+import Footer from "../../components/Footer";
 import { Grid, Typography } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
 import { HomeData } from "../../screens/Home/HomeScreenData";
@@ -12,7 +12,6 @@ export default function HomeScreen() {
   const { ScreenWidth } = ScreenSize();
   return (
     <div>
-     
       <Grid className="homescreen-topheader">
         <Typography className="heading-top-homescreen">
           Welcome to Smartups,
@@ -50,9 +49,9 @@ export default function HomeScreen() {
         })}
       </div>
       <div className="socailMediaDiv">
-      <SocailMediaComp />
+        <SocailMediaComp />
       </div>
-      <LaunchFooter />
+      <Footer />
     </div>
   );
 }
