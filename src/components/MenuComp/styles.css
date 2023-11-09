@@ -1,115 +1,107 @@
-.topBar {
-    background-color: white;
-    width: 100%;
-    height: 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }
-  
-  .logo img {
-    width: 160px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  /* Update the styles for the menu */
-  .bm-burger-button {
-    display: none; /* Hide the default burger button */
-  }
-  
-  /* Define styles for the menu items */
-  .bm-item-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 998;
-  }
-  
-  .bm-item {
-    margin: 10px 0;
-  }
-  
-  /* Update the styles for the burger icon */
-  .bm-burger-bars {
-    background: #000; /* Set the color of the bars */
-  }
-  
-  /* Define styles for the menu overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3); /* Add a semi-transparent overlay behind the menu */
-  }
-  
-  @media screen and (max-width: 768px) {
-    /* .topLinks {
-      display: none;
-    } */
-  
-    /* Show the burger button on small screens */
-    .bm-burger-button {
-      display: block;
-      cursor: pointer;
-      background: transparent;
-      margin-right: 20px;
-    }
-  }
-  
-
-.menu-crossButtonClassName {
-  /* border: 5px solid green; */
-  top: 19px !important;
-  left: 25px !important;
-  width: 18px !important;
+.menu-topBar {
+  background-color: white;
+  width: 96%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid purple; */
+  margin-left: 2%;
 }
+
+
+
+.menu-browserGrid {
+  display: flex;
+  /* border: 1px solid purple; */
+  min-width: 390px;
+  justify-content: space-evenly;
+  width: 55vw;
+  margin-top: 20px;
+}
+/* 800 to 950 */
+#menuBrowser-text {
+  font-size: 14px;
+  text-align: center;
+  color: #959393;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* more than 949   */
+@media (min-width: 950px) {
+  #menuBrowser-text {
+    font-size: 16px;
+  }
+}
+/* less than 800 */
+@media (max-width:799px) {
+  #menuBrowser-text {
+    /* font-size: 16px; */
+    text-align: left;
+  }
+}
+
+.menu-logo {
+  /* border: 1px solid purple; */
+}
+/*  less than 320   */
+@media (max-width: 320px) {
+  .menu-logo img {
+    width: 60px;
+  }
+}
+/* 321 to 800 */
+@media (min-width: 321px) and (max-width: 800px) {
+  .menu-logo img {
+    width: 100px;
+  }
+}
+/* 800 to 900 */
+@media (min-width: 800px) {
+  .menu-logo img {
+    width: 135px;
+  }
+}
+/* more than 900    */
+@media (min-width: 800px) {
+  .menu-logo img {
+    width: 160px;
+  }
+}
+/* menu closs icon */
+.menu-crossButtonClassName {
+  top: 21px !important;
+  left: 18px !important;
+  color: #1A2644;
+  height: 35px !important;
+  width: 33px !important;
+  
+}
+/* menu icon */
 .menu-burgerButtonClassName {
-  /* border: 5px solid blue; */
   height: 35px;
   width: 35px;
   position: relative;
-  margin-right: 3vw;
-  /* right: 0; */
+  color: #1A2644;
 }
 
-.menu-crossClassName {
-  /* border: 5px solid green; */
-}
+
+/* menu outer container */
 .bm-menu-wrap {
   top: 0;
   width: 80vw !important;
   background: #fff;
+  max-width: 320px;
 }
 
 .menu-list {
-  /* border: 5px solid green; */
   display: flex;
   width: 100%;
 }
-
-.logo img {
-  /* width: 160px; */
-  height: 42px;
-  padding-left: 3vw;
-}
-
+/* overlay */
 .menu-overlay {
   right: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5) !important;
-}
-
-.menu-class {
-  display: flex;
 }

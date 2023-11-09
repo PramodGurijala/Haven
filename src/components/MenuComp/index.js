@@ -4,28 +4,78 @@ import { useNavigate } from "react-router-dom";
 import smartupsLogo from "../../assets/smartupsLogo.png";
 import { slide as Menu } from "react-burger-menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { Typography } from "@mui/material";
+import ChevronLeftSharpIcon from "@mui/icons-material/ChevronLeftSharp";
+import { Typography, Grid } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
+import Button from "../Button";
+import ChevronRightSharpIcon from "@mui/icons-material/ChevronRightSharp";
+import PersonSharpIcon from "@mui/icons-material/PersonSharp";
+import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 
 export default function MenuComp() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const navigate = useNavigate();
+
   const { ScreenWidth } = ScreenSize();
   return (
-   
-      <div className="topBar">
-        <div className="logo">
-          <img src={smartupsLogo} alt="SmartUps Logo" />
-        </div>
+    <div className="menu-topBar">
+      <div className="menu-logo">
+        <img src={smartupsLogo} alt="SmartUps Logo" />
+      </div>
+      {ScreenWidth >= 800 ? (
+        <>
+          <Grid className="menu-browserGrid">
+            <Typography id="menuBrowser-text" textAlign={"center"}>
+              About Us
+            </Typography>
+            <Typography id="menuBrowser-text">Resources</Typography>
+            <Typography id="menuBrowser-text">News</Typography>
+            <Typography id="menuBrowser-text">Products</Typography>
+            <Typography style={{ color: "#1A2644" }} id="menuBrowser-text">
+              Pricing
+            </Typography>
+            <Typography id="menuBrowser-text" textAlign={"center"}>
+              Contact Us
+            </Typography>
+          </Grid>
+        </>
+      ) : null}
+      <Grid
+        // border={"1px solid purple"}
+        gap={"5px"}
+        display={"flex"}
+        alignItems={"center"}
+         marginTop={ScreenWidth >= 800 ? '20px' : '0'} // when width > 800
+      >
+        {!isLogin ? (<> <Typography
+        // border={'1px solid red'}
+          style={{ color: "#1A2644" }}
+          id="menuBrowser-text"
+          textAlign={"center"}
+          sx={{ textDecoration: "underline" }}
+        >
+          Sign Up
+        </Typography>
+        <Button color="orange" name="Login" /></>):(<>
+        <PersonSharpIcon style={{
+          fontSize:'30',
+        }} />
+        </>)}
+       
 
-        {ScreenWidth < 600 ? (
+        {ScreenWidth < 800 ? (
           <>
             <Menu
               customBurgerIcon={
                 <MenuIcon style={{ color: "red", fontSize: "30" }} />
               }
-              customCrossIcon={<ArrowBackIosIcon style={{ color: "red" }} />}
+              customCrossIcon={
+                <ChevronLeftSharpIcon
+                  style={{
+                    fontSize: "60",
+                  }}
+                />
+              }
               right
               burgerBarClassName={"burgerBarClassName"}
               itemListClassName={"menu-list"}
@@ -35,7 +85,6 @@ export default function MenuComp() {
               crossClassName={"menu-crossClassName"}
               overlayClassName={"menu-overlay"}
               burgerButtonClassName={"menu-burgerButtonClassName"}
-              // noOverlay
               // isOpen={true}
               // onClose={() =>!isMenuOpen}
             >
@@ -54,22 +103,73 @@ export default function MenuComp() {
                     alignItems: "flex-end",
                     paddingLeft: "60px",
                     color: "#1A264480",
-                    fontWeight: "500",
-                    paddingBottom:'10px'
+                    fontWeight: "600",
+                    paddingBottom: "10px",
                   }}
                 >
                   Menu
                 </div>
-                <div
-                  style={{
-                    borderBottom: "2px solid #1A264433",
-                    borderTop: "2px solid #1A264433",
-                    margin: "0px 25px",
-                    padding: "20px 0px",
-                  }}
-                >
-                  Login
-                </div>
+
+                {isLogin ? (
+                  <>
+                    <div
+                      style={{
+                        borderTop: "1.5px solid #1A264433",
+                        margin: "0px 25px",
+                        padding: "20px 0px",
+                        display: "flex",
+                        alignItems: "center",
+                       
+                        justifyContent:'space-between'
+                      }}
+                    >
+                      <Grid gap={'10px'} display={'flex'} alignItems={'center'}>
+                      <PersonSharpIcon />
+                      <Typography>My Profile</Typography>
+                      </Grid>
+                    
+
+                      <ChevronRightSharpIcon
+                      style={{
+                        fontSize: "40",
+                        color: "#1A2644",
+                      }}
+                    />
+                    </div>
+                    <div
+                      style={{
+                        borderBottom: "1.5px solid #1A264433",
+                        borderTop: "1.5px solid #1A264433",
+                        margin: "0px 25px",
+                        padding: "20px 0px",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                    >
+                      <LogoutSharpIcon />
+                      <Typography>Logout</Typography>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div
+                      style={{
+                        borderBottom: "1.5px solid #1A264433",
+                        borderTop: "1.5px solid #1A264433",
+                        margin: "0px 25px",
+                        padding: "20px 0px",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                    >
+                      <PersonSharpIcon />
+                      <u>Login</u>
+                    </div>
+                  </>
+                )}
+
                 <div
                   style={{
                     display: "flex",
@@ -78,61 +178,35 @@ export default function MenuComp() {
                     gap: "25px",
                   }}
                 >
-                  <a id="Pricing" className="menu-item">
-                    Pricing
-                  </a>
+                  <Grid
+                    display={"flex"}
+                    alignItems={"center"}
+                    justifyContent={"space-between"}
+                    // border={"1px solid red"}
+                  >
+                    <a style={{ color: "#1A2644" }} id="menuBrowser-text">
+                      Pricing
+                    </a>
+                    <ChevronRightSharpIcon
+                      style={{
+                        fontSize: "40",
+                        color: "#1A2644",
+                      }}
+                    />
+                  </Grid>
 
-                  <a id="About Us" className="menu-item">
-                    About Us
-                  </a>
-                  <a id="Resources" className="menu-item">
-                    Resources
-                  </a>
-                  <a id="News" className="menu-item">
-                    News
-                  </a>
-                  <a id="Products" className="menu-item">
-                    Products
-                  </a>
+                  <a id="menuBrowser-text">About Us</a>
+                  <a id="menuBrowser-text">Resources</a>
+                  <a id="menuBrowser-text">News</a>
+                  <a id="menuBrowser-text">Products</a>
 
-                  <a id="Contact Us" className="menu-item">
-                    Contact Us
-                  </a>
+                  <a id="menuBrowser-text">Contact Us</a>
                 </div>
               </div>
             </Menu>
           </>
-        ) : (
-          <>
-          <a id="About Us" className="menu-item">
-                    About Us
-                  </a>
-
-                  <a id="Resources" className="menu-item">
-                    Resources
-                  </a>
-                  <a id="News" className="menu-item">
-                    News
-                  </a>
-                  <a id="Products" className="menu-item">
-                    Products
-                  </a>
-                  <a id="Pricing" className="menu-item">
-                    Pricing
-                  </a>
-
-                  <a id="Contact Us" className="menu-item">
-                    Contact Us
-                  </a>
-                  <a id="Sign Up" style={{ textDecoration: "underline" }}>
-            Sign Up
-          </a>
-          <a id="Log in" className="loginButton">
-            Log in
-          </a>
-                  </>   
-        )}
-      </div>
-   
+        ) : null}
+      </Grid>
+    </div>
   );
 }

@@ -7,17 +7,13 @@ import LaunchFooter from "../../components/LaunchFooter";
 import { Grid, Typography } from "@mui/material";
 import { ScreenSize } from "../../ScreenSize";
 import { HomeData } from "../../screens/Home/HomeScreenData";
-// import MenuComp from "../../components/MenuComp";
-
 
 export default function HomeScreen() {
   const navigate = useNavigate();
   const { ScreenWidth } = ScreenSize();
   return (
     <div>
-      <Grid p={2}>
-        <Typography>header component</Typography>
-      </Grid>
+      <MenuComp />
       <Grid className="homescreen-topheader">
         <Typography className="heading-top-homescreen">
           Welcome to Smartups,
