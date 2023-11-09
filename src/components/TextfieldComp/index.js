@@ -12,7 +12,7 @@ export default function TextfieldComp({
   setVal,
   label,
   error = false,
-  helperText='',
+  helperText = "",
   type = "text",
   disabled = false,
   required = false,
@@ -65,36 +65,25 @@ export default function TextfieldComp({
           },
           "& .MuiFilledInput-input": {
             color: "#1A2644",
-            // backgroundColor: "#fff",
             borderRadius: "4px 4px 0px 0px",
-            paddingTop:'20px',
-            paddingBottom:'6px'
+            paddingTop: "20px",
+            paddingBottom: "6px",
           },
-          "& .css-17d4zvv-MuiInputBase-root-MuiFilledInput-root:hover": {
-            // background: "#fff",
+          "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root:hover": {
+            backgroundColor: "transparent",
           },
-          "& .MuiInputBase-root": {
-            // background: "#fff",
-            // borderBottom: !error ? "2px solid #1A2644" : "1.5px solid red",
+          "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disabled, .Mui-error):before": {
+            borderBottom: !error ? "2px solid #1A2644" : "1.5px solid #B00020",
           },
-
           "& .css-xgij6c-MuiFormHelperText-root": {
             color: !error ? "#fff" : "red",
           },
           "& .MuiInputLabel-root.Mui-focused": {
-            // borderBottom: "0",
             transform: "translate(12px, 5px) scale(0.75)", //
           },
-          "& .css-19ji0dv-MuiInputBase-root-MuiFilledInput-root:before": {
-            // borderBottom: "0",
+          "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root:before": {
+            borderBottom: !error ? "2px solid #1A2644" : "1.5px solid #B00020",
           },
-          "& .css-17d4zvv-MuiInputBase-root-MuiFilledInput-root:before":{
-            // borderBottom: !error ? "2px solid #1A2644" : "1.5px solid red",
-          borderBottom:'2px solid #1A2644'
-          },
-          "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root:before":{
-            borderBottom:'2px solid #1A2644'
-          }
         }}
       />
     </>
