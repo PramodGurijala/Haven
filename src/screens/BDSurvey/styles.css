@@ -1,0 +1,10 @@
+.BDSurvey-boxer {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: -webkit-fill-available; */
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
