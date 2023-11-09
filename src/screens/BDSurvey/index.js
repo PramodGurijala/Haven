@@ -7,6 +7,7 @@ import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import TextfieldComp from "../../components/TextfieldComp";
+import LaunchFooter from "../../components/LaunchFooter";
 
 export function BDSurvey() {
   const navigate = useNavigate();
@@ -22,7 +23,6 @@ export function BDSurvey() {
             <Typography color={"#fff"}>Let's verify your details.</Typography>
             {/* <div style={{ height: "30px" }}></div> */}
             <TextfieldComp
-              error={true}
               label="Position / role"
               val={position}
               setVal={setPosition}
@@ -57,6 +57,7 @@ export function BDSurvey() {
         }
         title={"Business Diagnostic Survey"}
       />
+       <LaunchFooter />
     </>
   );
 }

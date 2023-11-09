@@ -55,7 +55,6 @@ export function SignUpComp({ title, content, thumb }) {
           {content}
         </Grid>
       </Grid>
-      <LaunchFooter />
     </Grid>
   );
 }

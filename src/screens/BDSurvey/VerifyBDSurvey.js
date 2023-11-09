@@ -7,6 +7,7 @@ import Button from "../../components/Button";
 import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import TextfieldComp from "../../components/TextfieldComp";
+import LaunchFooter from "../../components/LaunchFooter";
 
 export function VerifyBDSurvey() {
   return (
@@ -24,6 +25,7 @@ export function VerifyBDSurvey() {
         title={"Business Diagnostic Survey"}
         thumb={true}
       />
+      <LaunchFooter />
     </>
   );
 }
