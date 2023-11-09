@@ -84,6 +84,10 @@ export default function TextfieldComp({
           "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root:before": {
             borderBottom: !error ? "2px solid #1A2644" : "1.5px solid #B00020",
           },
+          "& .css-1qrqp1l-MuiInputBase-root-MuiFilledInput-root":{
+            background:'#fff',
+            backgroundColor:'#fff'
+          }
         }}
       />
     </>
