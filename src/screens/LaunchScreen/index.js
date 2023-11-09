@@ -7,14 +7,14 @@ import { ScreenSize } from "../../ScreenSize";
 import images from "../../config/images";
 import LaunchFooter from '../../components/LaunchFooter';
 import SocailMediaComp from "../../components/socialMedia";
-import MenuComp from "../../components/MenuComp";
+import { Header } from "../../components/Header";
 
 export default function LaunchScreen() {
   const navigate = useNavigate();
   const { isMobile, isLaptop, isTablet } = ScreenSize();
   return (
     <Grid className="LaunchScreen">
-      <MenuComp />
+      <Header />
       <Grid className="LaunchHeader">
         <img
           alt=""
