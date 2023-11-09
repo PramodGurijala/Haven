@@ -5,6 +5,7 @@ import { BDSurvey } from "./screens/BDSurvey";
 import {VerifyBDSurvey} from './screens/BDSurvey/VerifyBDSurvey';
 import  EmailScreen  from "./screens/EmailScreen";
 
+
 export function AppRouter() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ export function AppRouter() {
       <Route path="/BDSurvey" element={<BDSurvey />} />
       <Route path="/VerifyBDSurvey" element={<VerifyBDSurvey />} />
       <Route path="/EmailScreen" element={<EmailScreen />} />
+
     </Routes>
   );
 }

@@ -20,7 +20,6 @@ export default function EmailScreen() {
       <SignUpComp
         content={
           <Grid rowGap={"10px"} className="EmailScreen-boxer">
-            {/* <Typography color={"#fff"}>Let's verify your details.</Typography> */}
             {/* <div style={{ height: "30px" }}></div> */}
             <TextfieldComp
               label="Email address"
@@ -35,7 +34,16 @@ export default function EmailScreen() {
                 // navigate("/VerifyBDSurvey");
               }}
             />
-             <Typography color={"#fff"}>Let's verify your details.</Typography>
+             <Typography color={"#fff"}>OTP (one time PIN) will be shared to your given Email ID myna***@mail.com</Typography>
+             <Typography color={"blue"}>Or</Typography>
+             <Typography color={"#fff"}>Already have an account?</Typography>
+             <Button
+              name="Log in"
+              color="whiteBlue"
+              onClick={() => {
+                // navigate("/VerifyBDSurvey");
+              }}
+            />
           </Grid>
         }
         title={"Sign Up"}
